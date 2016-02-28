@@ -2,6 +2,7 @@ echo "This script will set up Laravel on a Koding vm...";
 echo "Updating currently installed packages";
 sudo apt-get update;
 echo "Installing Composer";
+cd ~;
 wget https://getcomposer.org/installer;
 mkdir envi;
 mv installer ./envi/installer;
