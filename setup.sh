@@ -11,12 +11,12 @@ cd envi;
 php installer;
 mv composer.phar composer;
 echo "export PATH=$PATH:$HOME/envi" >> $HOME/.bashrc;
-PATH=$PATH:$HOME/envi;
+export PATH=$PATH:$HOME/envi;
 source $HOME/.bashrc;
 echo "Installing Laravel";
 composer global require "laravel/installer";
 echo "export PATH=$PATH:$HOME/.composer/vendor/bin" >> $HOME/.bashrc;
-PATH=$PATH:$HOME/.composer/vendor/bin
+export PATH=$PATH:$HOME/.composer/vendor/bin
 source $HOME/.bashrc;
 cd $HOME;
 echo "Done";
