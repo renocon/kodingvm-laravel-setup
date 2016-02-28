@@ -10,14 +10,14 @@ mv installer ./envi/installer;
 cd envi;
 php installer;
 mv composer.phar composer;
-echo "export PATH=$PATH:$HOME/envi" >> $HOME/.bashrc;
-export PATH=$PATH:$HOME/envi;
-source $HOME/.bashrc;
+echo "export PATH=$PATH:$HOME/envi" >> $HOME/.profile;
+PATH=$PATH:$HOME/envi;
+source $HOME/.profile;
 echo "Installing Laravel";
 composer global require "laravel/installer";
-echo "export PATH=$PATH:$HOME/.composer/vendor/bin" >> $HOME/.bashrc;
-export PATH=$PATH:$HOME/.composer/vendor/bin
-source $HOME/.bashrc;
+echo "export PATH=$PATH:$HOME/.composer/vendor/bin" >> $HOME/.profile;
+PATH=$PATH:$HOME/.composer/vendor/bin
+source $HOME/.profile;
 cd $HOME;
 echo "Done";
 echo "Try laravel new <project name>";
