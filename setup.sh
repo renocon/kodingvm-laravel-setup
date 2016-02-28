@@ -1,3 +1,4 @@
+#!/bin/bash   
 echo "This script will set up Laravel on a Koding vm...";
 echo "Updating currently installed packages";
 sudo apt-get update;
